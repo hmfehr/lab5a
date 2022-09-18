@@ -76,6 +76,13 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+  let mySum1 = sum(a, b)[0];
+  let mySum2 = sum(mySum1, c)[0];
+  let myMult1 = multiply(a, b)[0];
+  let myMult2 = multiply(myMult2, c)[0];
+  let myStrThree = `${a} and ${b} and ${c} sum to ${mySum2}.`;
+  let myStrFour = `The product of ${a} and ${b} and ${c} is ${myMult2}.`;
+  return[mySum2, myMult2, myStrThree, myStrFour];
 
 }
 
